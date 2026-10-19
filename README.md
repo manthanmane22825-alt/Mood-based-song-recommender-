@@ -20,55 +20,20 @@ A beginner-friendly Python project that recommends songs based on the user's moo
 - Matplotlib — charts and visualizations
 - tabulate — formatted terminal tables
 
-## Project Structure
-
-```text
-mood-based-song-recommender/
-├── main.py
-├── songs.csv
-├── users.example.csv
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
 ## Requirements
 
 - Python 3.10 or newer recommended
 - pip
 
-## Setup and Run
 
-### 1. Clone the repository
 
-```bash
-git clone https://github.com/YOUR-USERNAME/mood-based-song-recommender.git
-cd mood-based-song-recommender
-```
-
-### 2. Create a virtual environment (recommended)
-
-Windows:
-
-```bash
-py -m venv .venv
-.venv\\Scripts\\activate
-```
-
-macOS/Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Prepare the CSV files
+### Prepare the CSV files
 
 Copy `users.example.csv` to `users.csv` in the project folder. The example file contains a demo account:
 
@@ -93,7 +58,7 @@ roadtrip,Road Trip Example Song by Example Singer
 
 Replace the examples with songs you are allowed to use. Keep the `Mood,Song` column names so they match the program.
 
-### 5. Run the program
+### Run the program
 
 ```bash
 python main.py
@@ -139,14 +104,4 @@ This is a learning project, not a production-ready authentication system. The de
 - The singer chart assumes song names contain text like `Song Title by Singer Name`; adjust the dataset or parsing logic if they do not.
 - The chart labels should describe the data accurately; the current chart title says “This Week” although the code counts rows in the CSV and does not track listening dates.
 
-## Disclaimer
 
-This project is for learning and demonstration purposes. It does not stream or play music; it recommends song names from a local CSV dataset.
-
-## Author
-
-**Your Name** — replace this with your name or GitHub profile.
-
-## License
-
-If you want others to reuse the code, add a license such as the MIT License after reviewing its terms. Do not add a license unless you intend to grant those permissions.
